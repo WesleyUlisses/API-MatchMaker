@@ -38,12 +38,12 @@ MatchMaker é uma aplicação para gerenciamento de futebol entre amigos, usada 
 
 4. Configure uma instancia de banco de dados Relacional para rodar a aplicação, utilizei postgres,
    caso utilize outro como o MySql, altere o dialect no arquivo:
-    - Navegue até a o arquivo <strong> Database.ts <strong/>
+    - Navegue até a o arquivo <strong> Database.ts </strong>
         
         ```bash
             cd src\infrastructure\database
         ```
-    - Altere aqui o dialect, para que você tenha suporte ao banco selecionado, lembran-do, apenas se não quiser ultilizar o postgres como base.
+    - Altere aqui o dialect, para que você tenha suporte ao banco selecionado, lembrando que, apenas se não quiser ultilizar o postgres como base.
  
    <img src="https://github.com/WesleyUlisses/API-MatchMaker/blob/main/resources/images/image.png"/>
    <br/>
