@@ -36,8 +36,11 @@ MatchMaker é uma aplicação para gerenciamento de futebol entre amigos, usada 
     echo "VARIAVEL=VALOR" > .env
     ```
 
-4. Configure uma instancia de banco de dados Relacional para rodar a aplicação, utilizei postgres, caso utilize outro como o MySql, altere o dialect no arquivo:
-    ![Imagem do codigo a ser alterado]('./resources/images/image.png')
+4. Configure uma instancia de banco de dados Relacional para rodar a aplicação, utilizei postgres,
+   caso utilize outro como o MySql, altere o dialect no arquivo:
+   
+   <img src="https://github.com/WesleyUlisses/API-MatchMaker/blob/main/resources/images/image.png"/>
+   <br/>
 
 4. Configure a URL do banco de dados no arquivo `.env`:
     ```txt
@@ -187,21 +190,27 @@ MatchMaker é uma aplicação para gerenciamento de futebol entre amigos, usada 
   ├── src/
   │   ├── application/
   │   │   ├── dtos/
+  │   │   ├── interfaces/
   │   │   ├── services/
-  │   │   └── useCases/
+  │   │   └── use-cases/
   │   ├── domain/
   │   │   ├── entities/
+  │   │   ├── services/
   │   │   └── repositories/
-  │   ├── infra/
+  │   ├── infrastructure/
+  │   │   ├── config/
   │   │   ├── database/
-  │   │   ├── repositories/
-  │   │   └── shuffle/
-  │   ├── interfaces/
-  │   │   ├── controllers/
   │   │   ├── http/
-  │   │   │   └── routes/
-  │   │   └── errors/
-  │   └── server.ts
+  │   │   │   └── server.ts
+  │   │   ├── repositories/
+  │   │   └── models/
+  │   ├── presentation/
+  │   │   ├── controllers/
+  │   │   ├── middlewares/
+  │   │   └── routes/
+  │   ├── shared/
+  │   │   └── utils/
+
   └── README.md
 ```
 
